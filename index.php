@@ -1,3 +1,4 @@
+<?php $pg = "index.php"; ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,36 +16,13 @@
 
 <body id="inicio">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-4 py-1 active" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 py-1" href="sobreMi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 py-1" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 py-1" href="contactos.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <?php include_once("menu.php"); ?>
     </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-4 mx-auto text-center cohete">
-                    <a href="proyectos.html"><img src="images/cohete.svg" alt="Cohete" class="img-cohete"></a>
+                    <a href="proyectos.php"><img src="images/cohete.svg" alt="Cohete" class="img-cohete"></a>
                 </div>
             </div>
             <div class="row">
@@ -53,7 +31,7 @@
                         <p class="p-1">Bienvenidos a mi sitio de Dearrollo Web</p>
                     </div>
                     <div class="col-12 text-center pt-2">
-                        <a href="proyectos.html" class="btn shadow ">Conoce mis proyectos</a>
+                        <a href="proyectos.php" class="btn shadow ">Conoce mis proyectos</a>
                     </div>
                 </div>
             </div>
